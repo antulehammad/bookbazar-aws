@@ -14,7 +14,7 @@ app.secret_key = 'bookbazar_secret_key'
 # ---------------------------------------------------------
 # AWS CONFIGURATION
 # ---------------------------------------------------------
-REGION = 'eu-north-1'
+REGION = 'us-east-1'
 dynamodb = boto3.resource('dynamodb', region_name=REGION)
 sns_client = boto3.client('sns', region_name=REGION)
 
